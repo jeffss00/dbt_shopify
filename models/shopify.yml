@@ -469,3 +469,37 @@ models:
         description: The exchange rate between the home currency and the currency of sale at the time of the transaction.
       - name: currency_exchange_calculated_amount
         description: The total amount of the transaction with the currency exchange rate applied.
+
+  - name: shopify__collection
+    description: Each record represents collection data within Shopify.
+    columns:
+      - name: collection_id
+        description: The unique numeric identifier for the shop.
+      - name: handle
+        description: The handle of the collection.
+      - name: title
+        description: Title of the collection
+
+  - name: shopify__collection_product
+    description: Each record represents collection data within Shopify.
+    columns:
+      - name: collection_id
+        description: The unique numeric identifier for the shop.
+      - name: product_id
+        description: The product id
+
+  - name: shopify__shop
+      description: Each record represents shop data within Shopify.
+      columns:
+        - name: shop_id
+          description: The unique numeric identifier for the shop.
+        - name: shop_name
+          desctiption: The name of the shop.
+        - name: timezone
+          description: The timezone of the shop.
+        - name: iana_timezone
+          description: Standardized name of the timezone.
+        - name: domain
+          description: The domain address of the shop.
+        - name: _fivetran_synced
+          description: Timestamp of the date the record was synced by Fivetran.
