@@ -489,17 +489,17 @@ models:
         description: The product id
 
   - name: shopify__shop
-      description: Each record represents shop data within Shopify.
-      columns:
-        - name: shop_id
-          description: The unique numeric identifier for the shop.
-        - name: shop_name
-          desctiption: The name of the shop.
-        - name: timezone
-          description: The timezone of the shop.
-        - name: iana_timezone
-          description: Standardized name of the timezone.
-        - name: domain
-          description: The domain address of the shop.
-        - name: _fivetran_synced
-          description: Timestamp of the date the record was synced by Fivetran.
+    description: Each record represents shop data within Shopify.
+    columns:
+      - name: id
+        description: The unique numeric identifier for the shop.
+      - name: name
+        description: The name of the shop.
+      - name: timezone
+        description: The timezone of the shop.
+      - name: iana_timezone
+        description: Standardized name of the timezone.
+      - name: domain
+        description: The domain address of the shop.
+      - name: _fivetran_synced
+        description: "{{ doc('_fivetran_synced') }}"
