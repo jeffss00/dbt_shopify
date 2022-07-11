@@ -2,6 +2,5 @@
 # - package: fivetran/shopify_source
 #   version: [">=0.6.0", "<0.7.0"]
 packages:
-    -git: https://github.com/jeffss00/dbt_shopify_source.git
-    revision: main
-    warn-unpinned: false
+  - git: "https://github.com/jeffss00/dbt_shopify_source.git" # git URL
+    revision: "main" # tag or branch name
